@@ -51,7 +51,7 @@ const App = () => {
           <Route path="/new-zealand" element={<NewZealand/>} />
           <Route path="/france" element={<France/>} />
           <Route path="/germany" element={<Germany/>} />
-          <Route Path="/english-test " element={<English />} />
+          <Route path="/english-test" element={<English />} />
         </Routes>
         <Footer />
       </BrowserRouter>
