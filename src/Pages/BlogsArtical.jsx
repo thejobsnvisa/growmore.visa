@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Helmet } from "react-helmet-async";
 
-import { blogs } from "../data/blogsData";
+import { blogs } from "../Data/BlogsData";
 import CommentSection from "../Components/CommentSection";
 
 const BlogsArticle = () => {
