@@ -6,9 +6,9 @@ import PathwaySection from "../Components/PathwaySection";
 import States from "../Components/States";
 import krunal2 from "../assets/krunal2.png";
 import wave2 from "../assets/wave2.jpg";
-import i1 from "../assets/i1.png";
-import i2 from "../assets/i2.png";
-import i3 from "../assets/i3.png";  
+import a1 from "../assets/a1.jpg";
+import a2 from "../assets/a2.jpg";
+import a3 from "../assets/a3.jpg";  
 import r1 from "../assets/r1.svg";
 import r2 from "../assets/r2.svg";
 import r3 from "../assets/r3.svg";
@@ -111,7 +111,7 @@ const Australia = () => {
             {/* Big Family Image */}
             <div className="row-span-2">
               <img
-                src={i1}
+                src={a2}
                 alt="Family Immigration"
                 className="w-full h-94 object-cover rounded-2xl"
               />
@@ -120,7 +120,7 @@ const Australia = () => {
             {/* City Image */}
             <div>
               <img
-                src={i2}
+                src={a1}
                 alt="Australia City"
                 className="w-full h-32 object-cover rounded-2xl shadow-sm"
               />
@@ -129,7 +129,7 @@ const Australia = () => {
             {/* Consultant Image */}
             <div>
               <img
-                src={i3}
+                src={a3}
                 alt="Consultant"
                 className="w-full h-57 object-cover rounded-2xl shadow-sm"
               />
