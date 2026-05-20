@@ -49,7 +49,7 @@ const English = () => {
             {/* Left Column */}
              <div className="bg-[#eff9fb] p-6 rounded-3xl md:col-span-1 w-full sm:h-200 md:h-120 lg:h-120 md:w-[400px] lg:w-[500px] mx-auto md:mx-0">
                          <div className="space-y-5">
-                           <Link to="/our-services/individual/employer-sponsored-visa/">
+                           <Link to="">
                              <div className="group flex  items-center justify-between gap-6 bg-white px-5 py-4  rounded-3xl cursor-pointer transition-all duration-300 hover:shadow-md">
                                <span className="flex-1 text-[#28535B]  font-semibold group-hover:text-[#5dc2d3] transition-colors duration-300">
                                  IELTS
@@ -58,7 +58,7 @@ const English = () => {
                              </div>
                            </Link>
            
-                           <Link to="/our-services/individual/general-skilled-visa/">
+                           <Link to="">
                              <div className="group flex mt-3 items-center justify-between gap-6 bg-white px-5 py-4  rounded-3xl cursor-pointer transition-all duration-300 hover:shadow-md">
                                <span className="flex-1 text-[#28535B]  font-semibold group-hover:text-[#5dc2d3] transition-colors duration-300">
                                  PTE
@@ -67,7 +67,7 @@ const English = () => {
                              </div>
                            </Link>
            
-                           <Link to="/our-services/individual/student-guardian-visa/">
+                           <Link to="">
                              <div className="group flex mt-3 items-center justify-between gap-6 bg-white px-5 py-4  rounded-3xl cursor-pointer transition-all duration-300 hover:shadow-md">
                                <span className="flex-1 text-[#28535B]  font-semibold group-hover:text-[#5dc2d3] transition-colors duration-300">
                                  TOEFL
@@ -76,7 +76,7 @@ const English = () => {
                              </div>
                            </Link>
            
-                           <Link to="/our-services/individual/family-visa/">
+                           <Link to="">
                              {" "}
                              <div className="group flex mt-3 items-center justify-between gap-6 bg-white px-5 py-4  rounded-3xl cursor-pointer transition-all duration-300 hover:shadow-md">
                                <span className="flex-1 text-[#28535B]  font-semibold group-hover:text-[#5dc2d3] transition-colors duration-300">
@@ -86,7 +86,7 @@ const English = () => {
                              </div>
                            </Link>
            
-                           <Link to="/our-services/individual/temporary-work-short-stay-visa/">
+                           <Link to="">
                              <div className="group mt-3 flex items-center justify-between gap-6 bg-white px-5 py-4  rounded-3xl cursor-pointer transition-all duration-300 hover:shadow-md">
                                <span className="flex-1 text-[#28535B]  font-semibold group-hover:text-[#5dc2d3] transition-colors duration-300">
                                  CAMBRIDGE C1 ADVANCED
@@ -95,7 +95,7 @@ const English = () => {
                              </div>
                            </Link>
            
-                           <Link to="/our-services/individual/global-talent-visa/">
+                           <Link to="">
                              <div className="group flex  mt-3 items-center justify-between gap-6 bg-white px-5 py-4  rounded-3xl cursor-pointer transition-all duration-300 hover:shadow-md">
                                <span className="flex-1 text-[#28535B]  font-semibold group-hover:text-[#5dc2d3] transition-colors duration-300">
                                  LANGUAGECERT ACADEDMIC
