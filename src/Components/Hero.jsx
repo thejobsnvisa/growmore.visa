@@ -1,0 +1,238 @@
+import { useRef, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import img2 from "../assets/img2.png";
+
+const Hero = () => {
+  const recaptchaRef = useRef(null);
+  const [loading, setLoading] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const texts = [
+    "Employer Visa Expert",
+    "Skill in Demand Visa SC482",
+    "ENS Visa SC186",
+    "Labour Agreements",
+  ];
+
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  /* PERFORMANCE FIXED TYPING EFFECT */
+  useEffect(() => {
+    const currentWord = texts[currentWordIndex];
+
+    const typingSpeed = isDeleting ? 90 : 160;
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        const nextText = currentWord.substring(0, displayText.length + 1);
+        setDisplayText(nextText);
+
+        if (nextText === currentWord) {
+          setTimeout(() => setIsDeleting(true), 1800);
+        }
+      } else {
+        const nextText = currentWord.substring(0, displayText.length - 1);
+        setDisplayText(nextText);
+
+        if (nextText === "") {
+          setIsDeleting(false);
+          setCurrentWordIndex((prev) => (prev + 1) % texts.length);
+        }
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, currentWordIndex]);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const token = recaptchaRef.current?.getValue();
+
+    if (!token) {
+      toast.warn("Please verify the captcha");
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+      const payload = {
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        visaType: data.visaType,
+        message: data.message,
+        captchaToken: token,
+        source: "Website Hero Form",
+      };
+
+      const BASE_URL = "https://growmore-1.vercel.app";
+
+      const response = await fetch(`${BASE_URL}/api/lead`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Thank you! Our team will contact you shortly.");
+        e.target.reset();
+        setPhoneNumber("");
+        recaptchaRef.current.reset();
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
+    } catch (error) {
+      alert(`Error: ${error.message}`);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <section
+      className="bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url(${img2})`,
+      }}
+    >
+      <div className="relative z-10 max-w-7xl mx-auto px-2 lg:px-8 xl:px-2 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-12">
+        {/* LEFT CONTENT */}
+        <div className="text-white text-center lg:text-left lg:w-full xl:w-[1200px]">
+          <h2 className="text-xs sm:text-sm font-bold tracking-widest text-[#5DC2D3] uppercase mb-4">
+            Welcome to Growmore Global Visa
+          </h2>
+
+          <h1 className="text-3xl sm:text-4xl lg:text-4xl font-semibold leading-tight mb-6">
+            BEGIN YOUR INTERNATIONAL JOURNEY
+          </h1>
+
+          <p className="text-base sm:text-lg mb-6 leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify">
+            Whether you are planning to study, work, travel, or settle abroad,
+            Growmore Global Visa is here to provide you with complete
+            immigration support for student visas, work visas, dependent visas,
+            visitor visas and other migration services across multiple
+            countries. So, start your immigration journey today with clear
+            guidance and reliable support from us.
+          </p>
+
+          <Link to="/who-we-are">
+            <button className="bg-[#6dc7d1] px-8 py-3 mt-4 rounded-full text-sm sm:text-base hover:bg-black transition duration-300">
+              Know More →
+            </button>
+          </Link>
+        </div>
+
+        {/* RIGHT FORM */}
+        <div className="flex justify-center lg:justify-end px-4 sm:px-6">
+          <div className="bg-black rounded-3xl shadow-2xl w-full max-w-sm sm:max-w-md lg:max-w-lg">
+            <div className="h-6 bg-[#6dc7d1] rounded-t-3xl"></div>
+
+            <div className="p-6 sm:p-8">
+              <p className="text-[#6dc7d1] text-lg tracking-widest mb-2 font-bold">
+                Speak with Us
+              </p>
+
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-[#6dc7d1]">
+                Book a Consultation
+              </h2>
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <input
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                    className="bg-white rounded-lg px-4 py-2 w-full border border-gray-300"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Enter Email"
+                    required
+                    className="bg-white rounded-lg px-4 py-2 w-full border border-gray-300"
+                  />
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <div className="w-full sm:w-28 bg-white rounded-lg border border-gray-300">
+                    <div>Phone Input</div>
+                  </div>
+
+                  <input
+                    type="tel"
+                    placeholder="Contact Number"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    className="flex-1 bg-white rounded-lg px-4 py-2 border border-gray-300 w-full"
+                    required
+                  />
+                </div>
+
+                <select
+                  name="visaType"
+                  required
+                  className="bg-white rounded-lg px-4 py-2 w-full border border-gray-300"
+                >
+                  <option value="">Inquiry For</option>
+                  <option>Study Visa</option>
+                  <option>Work Visa</option>
+                  <option>Migration Visa</option>
+                </select>
+                <select
+                  name="Country"
+                  required
+                  className="bg-white rounded-lg px-4 py-2 w-full border border-gray-300"
+                >
+                  <option value="">Country</option>
+                  <option>Australia</option>
+                  <option>Canada</option>
+                  <option>Dubai</option>
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Germany</option>
+                  <option>France</option>
+                  <option>New Zealand</option>
+                  <option>Other</option>
+                </select>
+                <textarea
+                  rows="4"
+                  name="message"
+                  placeholder="Your Comments"
+                  className="bg-white rounded-lg px-4 py-3 w-full border border-gray-300"
+                ></textarea>
+
+                <div className="flex justify-center sm:justify-start">
+                  <ReCAPTCHA sitekey={"test"} ref={recaptchaRef} />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="bg-[#6dc7d1] hover:border-[#6dc7d1] hover:border-2 px-8 py-2 text-white rounded-full hover:bg-black transition disabled:opacity-50 w-full sm:w-auto"
+                >
+                  {loading ? "Submitting..." : "Submit →"}
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
