@@ -38,7 +38,7 @@ const English = () => {
             </h1>
 
             <p className="text-white font-medium mt-3 text-sm sm:text-base">
-              Home &gt; <span className=" cursor-pointer">English Test</span> &gt;{" "}
+              Home &gt; <span className=" cursor-pointer">English Test</span>{" "}
             </p>
           </div>
         </section>
