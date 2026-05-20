@@ -23,6 +23,7 @@ import Canada from "./Pages/Canada";
 import NewZealand from "./Pages/NewZealand";
 import France from "./Pages/France";
 import Germany from "./Pages/Germany";    
+import English from "./Pages/English";
 const App = () => {
   return (
     <div>
@@ -50,7 +51,7 @@ const App = () => {
           <Route path="/new-zealand" element={<NewZealand/>} />
           <Route path="/france" element={<France/>} />
           <Route path="/germany" element={<Germany/>} />
-          
+          <Route Path="/english-test " element={<English />} />
         </Routes>
         <Footer />
       </BrowserRouter>
