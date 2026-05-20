@@ -5,9 +5,9 @@ import "react-phone-input-2/lib/style.css";
 import PathwaySection from "../Components/PathwaySection";
 import States from "../Components/States";
 import { Helmet } from "react-helmet-async";
-import i1 from "../assets/i1.png";
-import i2 from "../assets/i2.png";
-import i3 from "../assets/i3.png";
+import dubai1 from "../assets/dubai1.jpg";
+import dubai2 from "../assets/dubai2.jpg";
+import dubai3 from "../assets/dubai3.jpg";
 import r1 from "../assets/r1.svg";
 import r2 from "../assets/r2.svg";
 import r3 from "../assets/r3.svg";
@@ -109,7 +109,7 @@ const UAE = () => {
             {/* Big Family Image */}
             <div className="row-span-2">
               <img
-                src={i1}
+                src={dubai1}
                 alt="Family Immigration"
                 className="w-full h-94 object-cover rounded-2xl"
               />
@@ -118,8 +118,8 @@ const UAE = () => {
             {/* City Image */}
             <div>
               <img
-                src={i2}
-                alt="Australia City"
+                src={dubai2}
+                alt="Dubai City"
                 className="w-full h-32 object-cover rounded-2xl shadow-sm"
               />
             </div>
@@ -127,7 +127,7 @@ const UAE = () => {
             {/* Consultant Image */}
             <div>
               <img
-                src={i3}
+                src={dubai3}
                 alt="Consultant"
                 className="w-full h-57 object-cover rounded-2xl shadow-sm"
               />

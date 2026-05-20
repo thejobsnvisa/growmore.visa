@@ -7,9 +7,9 @@ import States from "../Components/States";
 import wave2 from "../assets/wave2.jpg";
 import krunal2 from "../assets/krunal2.png";
 import { Helmet } from "react-helmet-async";
-import i1 from "../assets/i1.png";
-import i2 from "../assets/i2.png";
-import i3 from "../assets/i3.png";
+import usa1 from "../assets/usa1.jpg";
+import usa2 from "../assets/usa2.jpg";
+import usa3 from "../assets/usa3.jpg";
 import r1 from "../assets/r1.svg";
 import r2 from "../assets/r2.svg";
 import r3 from "../assets/r3.svg";
@@ -71,11 +71,11 @@ const USA = () => {
   return (
     <>
     <Helmet>
-            <title>UAE to UAE | Skilled Occupation List with GrowMore Immigration</title>
+            <title>USA to USA | Skilled Occupation List with GrowMore Immigration</title>
     
             <meta
               name="description"
-              content="Growmore Immigration can assist you in migrating to the UAE. Check the latest Skilled Occupation List, eligibility criteria, and expert migration support to start your journey today."
+              content="Growmore Immigration can assist you in migrating to the USA. Check the latest Skilled Occupation List, eligibility criteria, and expert migration support to start your journey today."
             />
     
             {/* ✅ Canonical for homepage */}
@@ -84,11 +84,11 @@ const USA = () => {
             {/* ✅ OG */}
             <meta
               property="og:title"
-              content="UAE to UAE | Skilled Occupation List with GrowMore Immigration"
+              content="USA to USA | Skilled Occupation List with GrowMore Immigration"
             />
             <meta
               property="og:description"
-              content="Growmore Immigration can assist you in migrating to the UAE. Check the latest Skilled Occupation List, eligibility criteria, and expert migration support to start your journey today."
+              content="Growmore Immigration can assist you in migrating to the USA. Check the latest Skilled Occupation List, eligibility criteria, and expert migration support to start your journey today."
             />
             <meta property="og:url" content={url} />
             <meta property="og:image" content="https://growmoreglobalvisa.com/logo.jpg" />
@@ -97,10 +97,10 @@ const USA = () => {
       <section className="bg-[#28535B] py-16 md:py-20">
         <div className="max-w-[1400px] mx-auto px-6 md:px-15">
           <h1 className="text-3xl md:text-5xl font-semibold text-white mb-3">
-            How to Move the UAE Permanently?
+            How to Move the USA Permanently?
           </h1>
           <p className="text-white font-semibold">
-            Home &gt; UAE to UAE
+            Home &gt; USA 
           </p>
         </div>
       </section>
@@ -111,7 +111,7 @@ const USA = () => {
             {/* Big Family Image */}
             <div className="row-span-2">
               <img
-                src={i1}
+                src={usa1}
                 alt="Family Immigration"
                 className="w-full h-94 object-cover rounded-2xl"
               />
@@ -120,7 +120,7 @@ const USA = () => {
             {/* City Image */}
             <div>
               <img
-                src={i2}
+                src={usa2}
                 alt="USA City"
                 className="w-full h-32 object-cover rounded-2xl shadow-sm"
               />
@@ -129,7 +129,7 @@ const USA = () => {
             {/* Consultant Image */}
             <div>
               <img
-                src={i3}
+                src={usa3}
                 alt="Consultant"
                 className="w-full h-57 object-cover rounded-2xl shadow-sm"
               />
@@ -138,7 +138,7 @@ const USA = () => {
           <div>
             {/* Small Heading */}
             <p className="text-[#8FD07C] font-[14px] font-semibold tracking-widest mb-3">
-              Why the UAE
+              Why the USA
             </p>
 
             {/* Main Heading */}
