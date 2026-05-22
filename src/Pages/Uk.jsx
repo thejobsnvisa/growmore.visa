@@ -378,10 +378,10 @@ const Uk = () => {
                   <img src={r1} alt="" className="w-10 h-10 shrink-0" />
                   <div>
                     <h3 className="text-xl md:text-xl font-semibold text-white">
-                      4,46,000
+                      7,00,000+
                     </h3>
                     <p className="text-sm md:text-base text-white mt-1">
-                      With 4,46,000 net overseas migrations
+                      International students studying in the UK
                     </p>
                   </div>
                 </div>
@@ -391,10 +391,10 @@ const Uk = () => {
                   <img src={r2} alt="" className="w-10 h-10 shrink-0" />
                   <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white">
-                      27.1 million
+                      1,40,000+
                     </h3>
                     <p className="text-sm md:text-base text-white mt-1">
-                      Uk's population has reached 27.1 million
+                      PSW visas approved yearly
                     </p>
                   </div>
                 </div>
@@ -404,11 +404,10 @@ const Uk = () => {
                   <img src={r3} alt="" className="w-10 h-10 shrink-0" />
                   <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white">
-                      185,000
+                     35,000+
                     </h3>
                     <p className="text-sm md:text-base text-white mt-1">
-                      Supported by a migration program of 185,000 places for
-                      skilled professionals and families.
+                     Jobs available across Dubai with strong demand in Technology & AI, Real Estate & Construction, and Healthcare
                     </p>
                   </div>
                 </div>
