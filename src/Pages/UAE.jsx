@@ -9,6 +9,8 @@ import dubai3 from "../assets/dubai3.jpg";
 import r1 from "../assets/r1.svg";
 import r2 from "../assets/r2.svg";
 import r3 from "../assets/r3.svg";
+import wave2 from "../assets/wave2.jpg";
+import krunal2 from "../assets/krunal2.png";
 
 const UAE = () => {
   const url = "https://www.growmoreglobalvisa.com/uae";
@@ -169,16 +171,16 @@ const UAE = () => {
           <div className="max-w-8xl  mx-auto md:h-120 lg:h-100 bg-[#333333] rounded-[30px] md:rounded-[40px] px-6 md:px-10 py-12 relative overflow-hidden">
             {/* Background wave */}
             <img
-              src={`${import.meta.env.BASE_URL}assets/wave2.jpg`}
+              src={wave2}
               alt="wave background"
               className="absolute inset-0 w-full h-full  object-cover opacity-20 pointer-events-none"
             />
 
             {/* Content */}
-            <div className="relative max-w-7xl  mx-auto mt-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
+            <div className="relative max-w-7xl  mx-auto mt-4 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center ">
               {/* LEFT */}
-              <div className="text-center md:text-left">
-                <h2 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-white leading-tight">
+              <div className="text-center md:text-left lg:ml-25">
+                <h2 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-white">
                   Dubai – Key <br />
                   Highlights
                 </h2>
@@ -237,7 +239,7 @@ const UAE = () => {
             {/* IMAGE */}
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
               <img
-                src={`${import.meta.env.BASE_URL}assets/krunal2.png`}
+                src={krunal2}
                 alt="MARA Registration"
                 className="w-full max-w-sm h-[680px] object-cover rounded-2xl"
               />

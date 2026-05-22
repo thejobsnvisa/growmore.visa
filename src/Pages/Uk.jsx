@@ -364,7 +364,7 @@ const Uk = () => {
             {/* Content */}
             <div className="relative max-w-7xl  mx-auto mt-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ">
               {/* LEFT */}
-              <div className="text-center md:text-left">
+              <div className="text-center md:text-left lg:ml-25">
                 <h2 className="text-2xl sm:text-3xl md:text-[40px] font-semibold text-white leading-tight">
                   UK– Key <br />
                   Highlights
