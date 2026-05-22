@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FaChevronRight, FaChevronDown } from "react-icons/fa";
 
 const States = () => {
@@ -137,7 +137,7 @@ const States = () => {
         <div className="relative z-10 px-12">
         {/* Heading */}
         <h2 className="text-3xl md:text-[40px] font-medium text-[#163c3d] mb-12">
-          <span className="text-[#7cc576] font-semibold md:text-[40px]">Australian</span> States
+          <span className="text-[#7cc576] font-semibold md:text-[40px]">Top Australia</span> Study Destinations
         </h2>
 
         {/* Grid */}

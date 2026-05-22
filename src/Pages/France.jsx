@@ -7,9 +7,9 @@ import States from "../Components/States";
 import { Helmet } from "react-helmet-async";
 import wave2 from "../assets/wave2.jpg";
 import krunal2 from "../assets/krunal2.png";
-import i1 from "../assets/i1.png";
-import i2 from "../assets/i2.png";
-import i3 from "../assets/i3.png";
+import f1 from "../assets/f1.jpg";
+import f2 from "../assets/f2.jpg";
+import f3 from "../assets/f3.jpg";
 import r1 from "../assets/r1.svg";
 import r2 from "../assets/r2.svg";
 import r3 from "../assets/r3.svg";
@@ -111,7 +111,7 @@ const France = () => {
             {/* Big Family Image */}
             <div className="row-span-2">
               <img
-                src={i1}
+                src={f1}
                 alt="Family Immigration"
                 className="w-full h-94 object-cover rounded-2xl"
               />
@@ -120,7 +120,7 @@ const France = () => {
             {/* City Image */}
             <div>
               <img
-                src={i2}
+                src={f2}
                 alt="France City"
                 className="w-full h-32 object-cover rounded-2xl shadow-sm"
               />
@@ -129,7 +129,7 @@ const France = () => {
             {/* Consultant Image */}
             <div>
               <img
-                src={i3}
+                src={f3}
                 alt="Consultant"
                 className="w-full h-57 object-cover rounded-2xl shadow-sm"
               />

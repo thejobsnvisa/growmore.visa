@@ -6,9 +6,9 @@ import PathwaySection from "../Components/PathwaySection";
 import States from "../Components/States";
 import { Helmet } from "react-helmet-async";
 import wave2 from "../assets/wave2.jpg";
-import i1 from "../assets/i1.png";
-import i2 from "../assets/i2.png";
-import i3 from "../assets/i3.png";
+import g1 from "../assets/g1.jpg";
+import g2 from "../assets/g2.jpg";
+import g3 from "../assets/g3.jpg";
 import r1 from "../assets/r1.svg";
 import r2 from "../assets/r2.svg";
 import r3 from "../assets/r3.svg";
@@ -111,7 +111,7 @@ const Germany = () => {
             {/* Big Family Image */}
             <div className="row-span-2">
               <img
-                src={i1}
+                src={g1}
                 alt="Family Immigration"
                 className="w-full h-94 object-cover rounded-2xl"
               />
@@ -120,8 +120,8 @@ const Germany = () => {
             {/* City Image */}
             <div>
               <img
-                src={i2}
-                alt="Australia City"
+                src={g2}
+                alt="Germany City"
                 className="w-full h-32 object-cover rounded-2xl shadow-sm"
               />
             </div>
@@ -129,7 +129,7 @@ const Germany = () => {
             {/* Consultant Image */}
             <div>
               <img
-                src={i3}
+                src={g3}
                 alt="Consultant"
                 className="w-full h-57 object-cover rounded-2xl shadow-sm"
               />

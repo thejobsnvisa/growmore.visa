@@ -7,9 +7,9 @@ import States from "../Components/States";
 import { Helmet } from "react-helmet-async";
 import wave2 from "../assets/wave2.jpg";
 import krunal2 from "../assets/krunal2.png";
-import i1 from "../assets/i1.png";
-import i2 from "../assets/i2.png";
-import i3 from "../assets/i3.png";
+import new1 from "../assets/new1.jpg";
+import new2 from "../assets/new2.jpg";
+import new3 from "../assets/new3.jpg";
 import r1 from "../assets/r1.svg";
 import r2 from "../assets/r2.svg";
 import r3 from "../assets/r3.svg";
@@ -111,7 +111,7 @@ const NewZealand = () => {
             {/* Big Family Image */}
             <div className="row-span-2">
               <img
-                src={i1}
+                src={new1}
                 alt="Family Immigration"
                 className="w-full h-94 object-cover rounded-2xl"
               />
@@ -120,7 +120,7 @@ const NewZealand = () => {
             {/* City Image */}
             <div>
               <img
-                src={i2}
+                src={new2}
                 alt="New Zealand City"
                 className="w-full h-32 object-cover rounded-2xl shadow-sm"
               />
@@ -129,7 +129,7 @@ const NewZealand = () => {
             {/* Consultant Image */}
             <div>
               <img
-                src={i3}
+                src={new3}
                 alt="Consultant"
                 className="w-full h-57 object-cover rounded-2xl shadow-sm"
               />
@@ -146,7 +146,7 @@ const NewZealand = () => {
               <span className="text-[#8FD07C] font-[40px] font-semibold">
                 Benefits
               </span>{" "}
-              of Moving to the UAE
+              of Moving to New Zealand  
             </h2>
 
             <p className="text-[#727272] font-medium leading-relaxed  max-w-xl text-justify">
