@@ -190,10 +190,10 @@ const France = () => {
                   <img src={r1} alt="" className="w-10 h-10 shrink-0" />
                   <div>
                     <h3 className="text-xl md:text-xl font-semibold text-white">
-                      4,46,000
+                      350,000+
                     </h3>
                     <p className="text-sm md:text-base text-white mt-1">
-                      With 4,46,000 net overseas migrations
+                      International students
                     </p>
                   </div>
                 </div>
@@ -203,10 +203,10 @@ const France = () => {
                   <img src={r2} alt="" className="w-10 h-10 shrink-0" />
                   <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white">
-                      27.1 million
+                      900,000+
                     </h3>
                     <p className="text-sm md:text-base text-white mt-1">
-                      France's population has reached 27.1 million
+                      annual job openings
                     </p>
                   </div>
                 </div>
@@ -216,11 +216,12 @@ const France = () => {
                   <img src={r3} alt="" className="w-10 h-10 shrink-0" />
                   <div>
                     <h3 className="text-xl md:text-2xl font-semibold text-white">
-                      185,000
+                      Education & Careers
                     </h3>
                     <p className="text-sm md:text-base text-white mt-1">
-                      Supported by a migration program of 185,000 places for
-                      skilled professionals and families.
+                      Up to 2 years post-study work, Schengen access to 27
+                      countries, top 10 global education ranking and strong
+                      graduate employability across Europe.
                     </p>
                   </div>
                 </div>
