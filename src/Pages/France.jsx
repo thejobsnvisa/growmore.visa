@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import "react-phone-input-2/lib/style.css";
 import PathwaySection from "../Components/PathwaySection";
-import States from "../Components/States";
 import { Helmet } from "react-helmet-async";
 import wave2 from "../assets/wave2.jpg";
 import krunal2 from "../assets/krunal2.png";
@@ -230,7 +229,6 @@ const France = () => {
           </div>
         </section>
         <PathwaySection />
-        <States />
         {/* Contact Section */}
         <section className="bg-white py-16 md:py-20">
           <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
