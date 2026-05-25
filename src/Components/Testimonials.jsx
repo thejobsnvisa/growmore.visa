@@ -5,46 +5,46 @@ import wave from "../assets/wave2.jpg";
 
 const data = [
   {
-    text: `I want to say thank you to you, which has been really helpful in managing my application from the beginning of doing the skill assessment until my visa is granted. You have been actively in communication with the DHA or VETASSESS to ensure that my application was done in a timely manner. I also kept updated throughout the entire process. Highly recommended`,
-    title: "Jovita Indahsari",
-    subtitle: "SC190 - PR Visa",
-    image: `${test}`,
-  },
-   {
-    text: `We are delighted that my husband’s student dependent visa was successfully granted with the help of Growmore Global Visa. Throughout the entire process, the team demonstrated professionalism, expertise, and unwavering support. TThanks to their expertise, the process was smooth and stress-free. We highly recommend Growmore Global Visa to anyone seeking reliable and efficient visa assistance.`,
-    title: "Shristi Timilsena",
-    subtitle: "SC500 - Student Visa",
-    image: `${test}`,
-  },  
-   {
-    text: `Thank you to Growmore Global Visa for their prompt, genuine, and professional service. From the initial consultation and assessment, I felt confident I had the right guidance for my Australia journey. The team’s well-organised approach and strong preparation made the process smooth, and my student visa was approved incredibly quickly. I truly appreciate their dedication, transparency, and continuous support throughout.`,
-    title: "Mansi Pandya",
-    subtitle:"SC500 - Student Visa",
+    text: `We are very happy that my student dependent 500 visa was approved with Growmore Global Visa. Rubina Hajimohmed was very helpful and guided us well through the process. She made sure all documents were correct and sent on time. The communication was great with regular updates. The whole process was easy and stress-free. We recommend Growmore Global Visa to anyone needing visa help.`,
+    title: "Akash Upadhya",
+    subtitle: "SC500 - Australia student dependent visa",
     image: `${test}`,
   },
   {
-    text: `First of all Mr KrunalBhai has vast knowledge of immigration process he provided me the right guidance according to my profile and always helps me to choose right path, and the best thing is he personally do all the process and take care of their clients. All over it was a best experience i would surely recommend to anyone for any kind of visa.`,
-    title: "Rahi",
-    subtitle: "SC491 - PR Visa",
+    text: `We are delighted that my husband’s student dependent visa was successfully granted with the help of Growmore Global Visa. Throughout the entire process, the team demonstrated professionalism, expertise, and unwavering support. TThanks to their expertise, the process was smooth and stress-free. We highly recommend Growmore Global Visa to anyone seeking reliable and efficient visa assistance.`,
+    title: "Shristi Timilsena",
+    subtitle: "SC500 - Australia student visa",
+    image: `${test}`,
+  },
+  {
+    text: `Thank you to Growmore Global Visa for their prompt, genuine, and professional service. From the initial consultation and assessment, I felt confident I had the right guidance for my Australia journey. The team’s well-organised approach and strong preparation made the process smooth, and my student visa was approved incredibly quickly. I truly appreciate their dedication, transparency, and continuous support throughout.`,
+    title: "Mansi Pandya",
+    subtitle: "SC500 - Australia student visa",
+    image: `${test}`,
+  },
+  {
+    text: `I am extremely grateful to the entire team at Growmore Global Visa for their exceptional support and guidance throughout my visa process. A special thanks to Rubina Ma’am for her outstanding assistance, patience, and continuous support at every stage of the process. Ami Ma’am and Hiya Ma’am were also very professional, responsive, and helpful.The team’s honest advice, clear communication, and dedication made the entire visa process smooth and stress-free. Their professionalism and commitment to clients truly stand out. I highly recommend Growmore Global Visa to anyone looking for trustworthy and reliable visa consultation services.`,
+    title: "Prince Modi",
+    subtitle: "SC500 - Australia student dependent visa",
     image: `${test}`,
   },
 
   {
-    text: `Kunal and the entire team at Growmore were very efficient and professional in handling our file. They had excellent knowledge regarding the immigration matters and were always there to answer our questions whenever we had. Exceptional customer service and communication from the entire team. Thank you.`,
-    title: "Kiran H Jani",
-    subtitle: "SC - 804 Parents Visa",
+    text: `I have had an wonderful experience with Growmore Global Visa. Especially Mr. Dev and team they were very helpful and informative throughout the process. And also kept me updated throughout the process and guided through each and every step, and I was fully aware where my process was heading and what will be next step. All in all it was a very smooth and easy process. Will definitely recommend Growmore Global visa to others as well who are looking for smooth and hazzel-free process.Once again Thank you Growmore Global visa and team.`,
+    title: "Chirag Modi",
+    subtitle: "Dubai student visa",
     image: `${test}`,
   },
   {
-    text: `Absolutely amazing service and coordination with the client. Within in a month I have got my approval. Staff is very helpful and cooperative all the time. Thank you so much for your support and help.`,
-    title: "Clemy Robert bhai Christy",
-    subtitle: "SC485 - Temporary Graduate visa",
+    text: `Amazing services. Excellent solutions with keeping customer’s interest at first before anything. Helping customer with all they can and understanding all the priorities and situations.`,
+    title: "Dhrumin Patel",
+    subtitle: "SC500 - Australia student visa",
     image: `${test}`,
   },
   {
-    text: `Grow More team is highly professional and very helpful. Special thanks to Kunal who really gave us the correct guidance and helped us to get the parents visa for our parents. I would highly recommend Kunal and his team for immigration services and to get your visa granted easily and without any hassle.`,
-    title: "Dhwanil Jani",
-    subtitle: "SC - 804 Parents Visa",
+    text: `Very reliable migration agent. Very supportive staff.`,
+    title: "Urvish Pathak",
+    subtitle: "SC500 - Australia student visa",
     image: `${test}`,
   },
   {
