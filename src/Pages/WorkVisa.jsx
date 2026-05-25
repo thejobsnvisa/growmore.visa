@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import a1 from "../assets/a1.jpg";
+import BenefitsSection from "../Components/BenefitsSection";
+import WhyTrustSection from "../Components/WhyTrustSection";
 const WorkVisa = () => {
   return (
     <div>
@@ -191,6 +193,8 @@ const WorkVisa = () => {
             </div>
           </div>
         </div>
+         <BenefitsSection/>
+         <WhyTrustSection/>
       </div>
     </div>
   );
